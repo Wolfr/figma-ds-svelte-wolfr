@@ -1,9 +1,8 @@
-<script lang="ts">
+<script>
   import Label from "$lib/components/Label.svelte";
   import Checkbox from "$lib/components/Checkbox.svelte";
-  import { CheckboxItem } from "$lib/types/CheckboxItem.ts";
 
-  export let items: CheckboxItem[] = [
+  export let items = [
       {
           "id": "id3",
           "name": "name",
@@ -46,5 +45,17 @@
       display: flex;
       gap: 8px;
   }
+
+  .checkbox :global(label) {
+      display: flex;
+      gap: 4px;
+  }
+
+  .checkbox .checkbox-text-wrapper {
+      /* Include the wrappers for flex control and detailed spacing control */
+      position: relative;
+      bottom: 1px;
+  }
+
 
 </style>

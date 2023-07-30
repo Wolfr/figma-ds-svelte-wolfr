@@ -2,8 +2,9 @@
 
     import Icon from "$lib/components/Icon.svelte";
 
-    export let href: string;
-    export let target: string;
+    // Any of _blank, _self, _parent, _top, or a frame name
+    export let target: string | undefined = undefined
+    export let href: string | undefined = undefined
 
 </script>
 

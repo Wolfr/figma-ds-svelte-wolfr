@@ -1,11 +1,11 @@
 <script lang="ts">
 
     export let value: string;
-    export let name: string;
-    export let id: string;
-    export let checked: boolean;
-    export let indeterminate: boolean;
-    export let disabled: boolean;
+    export let name: string | undefined = undefined
+    export let id: string | undefined = undefined
+    export let checked: boolean | undefined = undefined
+    export let indeterminate: boolean | undefined = undefined
+    export let disabled: boolean | undefined = undefined
 
 </script>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   export let light: boolean = false;
-  export let xFor: string;
+  export let xFor: string | undefined = undefined
+
 </script>
 
 <label class:light={light} for={xFor}><slot /></label>

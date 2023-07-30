@@ -1,13 +1,12 @@
-<script lang="ts">
+<script>
     import Radio from "$lib/components/Radio.svelte";
     import Label from "$lib/components/Label.svelte";
     import Legend from "$lib/components/Legend.svelte";
     import Fieldset from "$lib/components/Fieldset.svelte";
-    import { RadioItem } from "$lib/types/RadioItem.ts";
 
     export let legend = 'Legend title';
 
-    export let items: RadioItem[] = [
+    export let items = [
         {
             id: "id1",
             name: "name",
@@ -58,10 +57,20 @@
         gap: 4px;
     }
 
+    .radio :global(label) {
+        display: flex;
+    }
+
     .radio-group {
         align-items: center;
         display: flex;
         gap: 8px;
+    }
+
+    .radio-group .radio-text-wrapper {
+        /* Include the wrappers for flex control and detailed spacing control */
+        position: relative;
+        bottom: 1.5px;
     }
 
 </style>

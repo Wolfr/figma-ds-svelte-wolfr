@@ -4,21 +4,23 @@
   import FormMessage from "$lib/components/FormMessage.svelte";
   import TextArea from "$lib/components/TextArea.svelte";
 
-  export let id: string;
-  export let value: string;
+  export let id: string | undefined = undefined
+  export let value: string | undefined = undefined
   export let type: 'password' | 'textarea' | 'email' | 'search' | 'text' = 'text';
-  export let formMessage: string;
-  export let formMessageType: string;
-  export let label: string;
-  export let placeholder: string;
+
+  export let formMessage: string | undefined = undefined
+  export let formMessageType: string | undefined = undefined
+
+  export let label: string | undefined = undefined
+  export let placeholder: string | undefined = undefined
 
   // Textarea specific
-  export let rows: number;
-  export let cols: number;
+  export let rows: number = undefined | 5
+  export let cols: number = undefined | undefined
 
   // Number specific
-  export let min: number;
-  export let max: number;
+  export let min: number = undefined | undefined
+  export let max: number  = undefined | undefined
 </script>
 
 <div class="text-field">

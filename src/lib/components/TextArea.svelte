@@ -1,14 +1,14 @@
 <script lang="ts">
 
-  export let value: string = '';
-  export let placeholder: string = '';
-  export let rows: number = 3;
-  // cols has no default
-  export let cols: number;
+  export let value: string | undefined = undefined
+  export let placeholder: string | undefined = undefined
+  export let id: string | undefined = undefined
+  export let rows: number = undefined | 5
+  export let cols: number = undefined | undefined
 
 </script>
 
-<textarea placeholder={placeholder} bind:value={value} {rows} {cols}></textarea>
+<textarea placeholder={placeholder} {id} bind:value={value} {rows} {cols}></textarea>
 
 <style>
 

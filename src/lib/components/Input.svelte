@@ -2,24 +2,27 @@
 
   export let type: 'text' | 'password' = 'text'
   export let value: string
-  export let placeholder: string
+
+  export let placeholder: string | undefined = undefined
   export let autocomplete: 'on' | 'off' = 'off'
 
-  export let min: number
-  export let max: number
+  export let id: string | undefined = undefined
+
+  export let min: number = undefined | undefined
+  export let max: number  = undefined | undefined
 
 </script>
 
 {#if type === 'password'}
-  <input type="password" bind:value={value} {placeholder} {autocomplete}>
+  <input type="password" bind:value={value} {id} {placeholder} {autocomplete}>
 {:else if type === 'email'}
-  <input type="email" bind:value={value} {placeholder} {autocomplete}>
+  <input type="email" bind:value={value} {id} {placeholder} {autocomplete}>
 {:else if type === 'url'}
-  <input type="url" bind:value={value} {placeholder}>
+  <input type="url" bind:value={value} {id} {placeholder}>
 {:else if type === 'number'}
-  <input type="number" bind:value={value} {placeholder} {min} {max}>
+  <input type="number" bind:value={value} {id} {placeholder} {min} {max}>
 {:else}
-  <input type="text" bind:value={value} {placeholder} {autocomplete}>
+  <input type="text" bind:value={value} {id} {placeholder} {autocomplete}>
 {/if}
 
 <style>

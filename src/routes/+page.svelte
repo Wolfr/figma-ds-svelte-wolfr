@@ -2,7 +2,7 @@
   import Button from '$lib/components/Button.svelte';
   import FormGroup from '$lib/components/FormGroup.svelte';
   import Icon from '$lib/components/Icon.svelte';
-  import Loading from '$lib/components/Loading.svelte';
+
   import RadioGroup from "$lib/components/RadioGroup.svelte";
   import CheckboxGroup from "$lib/components/CheckboxGroup.svelte";
   import Input from '$lib/components/Input.svelte';
@@ -185,7 +185,7 @@
 </ComponentExample>
 
 <ComponentExample name="Input (text) - bare">
-  <Input type="text" id="apiKey" value="Hey" />
+  <Input type="text" value="Hey" />
 </ComponentExample>
 
 <ComponentExample name="Input (password) - bare">
@@ -211,19 +211,19 @@
     <TextField label="Label 1" id="field1" value="Hey combined" />
   </FormGroup>
   <FormGroup>
-    <TextField label="Field with placeholder" id="fieldPlaceholder" placeholder="This is a placeholder" />
+    <TextField label="Field with placeholder" id="fieldPlaceholder2" placeholder="This is a placeholder" />
   </FormGroup>
   <FormGroup>
-    <TextField label="Password" id="field3" type="password"  />
+    <TextField label="Password" id="fieldPassword"  type="password"  />
   </FormGroup>
   <FormGroup>
-    <TextField label="Email" id="field3" type="email"  />
+    <TextField label="Email" id="fieldEmail" type="email"  />
   </FormGroup>
   <FormGroup>
-    <TextField label="Number" id="field3" type="number"  />
+    <TextField label="Number" id="fieldNo" type="number"  />
   </FormGroup>
   <FormGroup>
-    <TextField type="textarea" label="My story" rows={10} id="field3" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  />
+    <TextField type="textarea" label="My story" rows={10} id="fieldStory" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."  />
   </FormGroup>
 </ComponentExample>
 
