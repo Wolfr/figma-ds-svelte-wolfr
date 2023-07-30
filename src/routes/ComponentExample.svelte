@@ -28,7 +28,7 @@
   }
 
 
-  h2 {
+  .box h2 {
       font-size: 11px;
       font-family: monospace;
       font-weight: 400;

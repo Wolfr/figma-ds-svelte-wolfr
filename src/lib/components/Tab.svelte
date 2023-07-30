@@ -3,11 +3,11 @@
   export let active = false;
 </script>
 
-<button class:active><slot /></button>
+<button class="tab" class:active><slot /></button>
 
 <style>
 
-  button {
+  .tab {
       appearance: none;
       -webkit-appearance: none;
       font-size: 12px;
@@ -19,11 +19,11 @@
       padding: 6px;
   }
 
-  .active {
+  .tab.active {
       opacity: 1;
   }
 
-  button:active {
+  .tab:active {
       opacity: .44;
   }
 
