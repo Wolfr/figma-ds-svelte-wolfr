@@ -21,6 +21,8 @@
   import UL from "$lib/components/UL.svelte";
   import LI from "$lib/components/LI.svelte";
 
+  import '$lib/global.css'
+
 </script>
 
 <H1>Figma DS Obra</H1>
@@ -35,68 +37,7 @@
   <LI>use more colour variables from figma</LI>
 </UL>
 
-<style>
 
-  :global(:root) {
-      /* Figma vars are too complex, here is a simple mapping of common colours */
-      --gray-7: #191919;
-      --gray-6: #2C2C2C;
-      --gray-5: #565656;
-      --gray-4: #7F7F7F;
-      --gray-3: #B2B2B2;
-      --gray-2: #DDDDDD;
-      --gray-1: #F0F0F0;
-      --blue-4: #007BE5;
-      --blue-3: #4597F7;
-      --blue-1: #E1F3FF;
-      --red-4: #E05534;
-      --red-1: #FBE9E4;
-      --green-4: #31BCAD;
-      --green-3: #0ED2BD;
-
-      --font-family: Inter, Arial, sans-serif;
-      --font-size-body: 11px;
-      --border-radius-small: 2px;
-      --border-radius-med: 5px;
-
-      /* Semantic */
-      --primary-color: var(--green-4);
-      --field-border-color: var(--gray-2);
-      --focus-ring-color: var(--primary-color);
-      --semantic-text-muted: var(--gray-4);
-      --semantic-text-body: var(--gray-6);
-      --semantic-text-heading: var(--gray-7);
-      --semantic-text-label: var(--gray-7);
-  }
-
-
-  @media (prefers-color-scheme: dark) {
-    /* Semantic remapping for dark mode */
-    :global(:root) {
-        --primary-color: var(--green-3);
-        --field-border-color: var(--gray-5);
-        --text-color: #FFF;
-        --semantic-text-muted: var(--gray-4);
-        --semantic-text-body: var(--gray-3);
-        --semantic-text-heading: #FFF;
-        --semantic-text-label: #FFF;
-    }
-
-    :global(body) {
-        color: var(--gray-3);
-        background: var(--gray-7);
-    }
-
-  }
-
-  :global(body) {
-      font-family: var(--font-family);
-      font-size: var(--font-size-body);
-  }
-
-
-
-</style>
 
 <H2>UI examples - Tabs</H2>
 
