@@ -11,7 +11,6 @@
 
 <input type="checkbox" {name} {indeterminate} {id} {value} bind:checked={checked} {disabled}  on:change on:focus on:blur />
 
-
 <style>
 
     input[type="checkbox"] {

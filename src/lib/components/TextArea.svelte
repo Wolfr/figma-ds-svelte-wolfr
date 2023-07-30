@@ -12,31 +12,30 @@
 
 <style>
 
-    textarea {
-        font-family: var(--font-family);
-        font-size: 12px;
-        line-height: 1.3;
-        border: 1px solid var(--field-border-color, hotpink);
-        width: 100%;
-        color: #333;
-        box-sizing: border-box;
-        padding: 6px 4px;
-        outline: 0;
-        border-radius: var(--border-radius-small);
-    }
+  textarea {
+      font-family: var(--font-family);
+      font-size: 12px;
+      line-height: var(--body-line-height);
+      border: 1px solid var(--field-border-color, hotpink);
+      width: 100%;
+      color: var(--semantic-text-body, hotpink);
+      box-sizing: border-box;
+      padding: 6px 4px;
+      outline: 0;
+      border-radius: var(--border-radius-small);
+  }
 
-    textarea:focus-visible {
-        border-color: var(--focus-ring-color);
-        box-shadow: 0 0 0 1px var(--focus-ring-color);
-    }
+  textarea:focus-visible {
+      border-color: var(--focus-ring-color);
+      box-shadow: 0 0 0 1px var(--focus-ring-color);
+  }
 
-    @media (prefers-color-scheme: dark) {
-        textarea {
-            background: none;
-            border-color: var(--gray-5, hotpink);
-            color: #FFF;
-        }
-    }
-
+  @media (prefers-color-scheme: dark) {
+      textarea {
+          background: none;
+          border-color: var(--gray-5, hotpink);
+          color: #FFF;
+      }
+  }
 
 </style>

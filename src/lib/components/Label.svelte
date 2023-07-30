@@ -9,6 +9,7 @@
 
     label {
         font-family: var(--font-family);
+        color: var(--semantic-text-label);
         font-size: 12px;
         display: block;
         font-weight: 600;

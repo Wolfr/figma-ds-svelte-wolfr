@@ -14,6 +14,8 @@
   <input type="password" bind:value={value} {placeholder} {autocomplete}>
 {:else if type === 'email'}
   <input type="email" bind:value={value} {placeholder} {autocomplete}>
+{:else if type === 'url'}
+  <input type="url" bind:value={value} {placeholder}>
 {:else if type === 'number'}
   <input type="number" bind:value={value} {placeholder} {min} {max}>
 {:else}
@@ -22,32 +24,32 @@
 
 <style>
 
-    input:where([type="text"], [type="password"], [type="email"], [type="number"], [type="search"]) {
-        font-family: Inter, Arial, sans-serif;
-        font-size: 12px;
-        line-height: 1.3;
-        border: 1px solid var(--field-border-color, hotpink);
-        width: 100%;
-        color: var(--gray-5, hotpink);
-        padding: 6px 4px;
-        box-sizing: border-box;
-        border-radius: var(--border-radius-small);
-    }
+  input:where([type="text"], [type="password"], [type="email"], [type="url"], [type="number"], [type="search"]) {
+      font-family: var(--font-family);
+      font-size: 12px;
+      line-height: var(--body-line-height);
+      border: 1px solid var(--field-border-color, hotpink);
+      width: 100%;
+      color: var(--gray-5, hotpink);
+      padding: 6px 4px;
+      box-sizing: border-box;
+      border-radius: var(--border-radius-small);
+  }
 
-    input:where([type="text"], [type="password"], [type="email"], [type="number"], [type="search"]):focus {
-        outline: 0;
-    }
+  input:where([type="text"], [type="password"], [type="email"], [type="url"], [type="number"], [type="search"]):focus {
+      outline: 0;
+  }
 
-    input:where([type="text"], [type="password"], [type="email"], [type="number"], [type="search"]):focus-visible {
-        border-color: var(--focus-ring-color);
-        box-shadow: 0 0 0 1px var(--focus-ring-color);
-    }
+  input:where([type="text"], [type="password"], [type="email"], [type="url"], [type="number"], [type="search"]):focus-visible {
+      border-color: var(--focus-ring-color);
+      box-shadow: 0 0 0 1px var(--focus-ring-color);
+  }
 
-    @media (prefers-color-scheme: dark) {
-        input:where([type="text"], [type="password"], [type="email"], [type="number"], [type="search"]) {
-            background: none;
-            color: #FFF;
-        }
-    }
+  @media (prefers-color-scheme: dark) {
+      input:where([type="text"], [type="password"], [type="email"], [type="url"], [type="number"], [type="search"]) {
+          background: none;
+          color: #FFF;
+      }
+  }
 
 </style>

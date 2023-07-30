@@ -14,10 +14,8 @@
 
     button {
         border: none;
-        color: #333;
         padding: 5px 12px;
         border-radius: var(--border-radius-med);
-        min-width: 80px;
         font-family: var(--font-family);
         font-size: var(--font-size-body);
         line-height: 1.3;
@@ -61,10 +59,11 @@
 
     @media (prefers-color-scheme: dark) {
         button {
-            background: #222;
+            background: var(--gray-6);
             color: #FFF;
         }
     }
+
 
 </style>
 
